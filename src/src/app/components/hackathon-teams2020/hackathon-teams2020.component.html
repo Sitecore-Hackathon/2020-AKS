@@ -1,0 +1,69 @@
+<aside role="aside" class="container blog-post-read-more">
+  <div class="row">
+    <div class="col-sm-12 related-posts-title-holder">
+      <h3>
+        <span class="related-posts-title text-muted" *scText="rendering.fields.heading"></span>
+      </h3>
+    </div>
+
+    <div class="blog-post-card card col-lg-4 col-md-6" *ngFor="let listItem of rendering.fields.teamList">
+      <img class="card-img-top" *scImage="listItem.fields.teamPhoto">
+      <div class="card-body bg-light">
+        <strong class="d-inline-block mb-2 text-success" *scText="listItem.fields.name"></strong>
+        <h3 class="card-title" *scText="listItem.fields.location"></h3>
+        <div class="mb-1 text-muted" *scText="listItem.fields.scheduledate"></div>
+
+        <div *scRichText="listItem.fields.teamMembers"></div>
+
+      </div>
+    </div>
+
+<!-- 
+    <div class="col-md-4" *ngFor="let listItem of rendering.fields.blocklist">
+      <div class="four">
+        <div class="content">
+          <img class="img-fluid" *scImage="listItem.fields.relatedImage">
+          <h5 *scText="listItem.fields.subheading"></h5>
+          <h1 *scText="listItem.fields.heading"></h1>
+          <p *scRichText="listItem.fields.description"></p>
+        </div>
+      </div>
+    </div> 
+    
+    <div class="blog-post-card card col-lg-4 col-md-6">
+      <img class="card-img-top" src="http://placeimg.com/540/366/tech" alt="Card image cap">
+      <div class="card-body bg-light">
+        <strong class="d-inline-block mb-2 text-success">Habitual Losers</strong>
+        <h3 class="card-title">USA, India, Ecuador</h3>
+        <div class="mb-1 text-muted">Feb 29, 2020</div>
+        <p>Niket A</p>
+        <p>Himanshu J</p>
+        <p>Roy S</p>
+      </div>
+    </div> 
+
+    <div class="blog-post-card card col-lg-4 col-md-6">
+      <img class="card-img-top" src="../../../../data/media/img/tech.jpeg" alt="Card image cap">
+      <div class="card-body bg-light">
+        <strong class="d-inline-block mb-2 text-success">Habitual Losers</strong>
+        <h3 class="card-title">USA, India, Ecuador</h3>
+        <div class="mb-1 text-muted">Feb 29, 2020</div>
+        <p>Niket A</p>
+        <p>Himanshu J</p>
+        <p>Roy S</p>
+      </div>
+    </div>
+
+    <div class="blog-post-card card col-lg-4 col-md-6">
+      <img class="card-img-top" src="../../../../data/media/img/tech.jpeg" alt="Card image cap">
+      <div class="card-body bg-light">
+        <strong class="d-inline-block mb-2 text-success">Habitual Losers</strong>
+        <h3 class="card-title">USA, India, Ecuador</h3>
+        <div class="mb-1 text-muted">Feb 29, 2020</div>
+        <p>Niket A</p>
+        <p>Himanshu J</p>
+        <p>Roy S</p>
+      </div>
+    </div>-->
+  </div>
+</aside>

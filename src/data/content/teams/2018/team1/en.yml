@@ -1,0 +1,14 @@
+id: team1-2018
+displayName: Habitual Losers
+template: Team-Template
+fields:
+  name: Habitual Losers
+  teamPhoto: 
+    src: /data/media/img/tech.jpeg
+    alt: team 
+  location: USA, India, Ecuador
+  scheduledate: Feb 28, 2018
+  teamMembers: |
+        <p>Niket A</p>
+        <p>Himanshu J</p>
+        <p>Roy S</p>

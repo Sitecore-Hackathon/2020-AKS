@@ -1,0 +1,29 @@
+<main role="main" class="container blog-post-detail">
+    <div class="row" class="container blog-post-detail">
+        <div class="blog-post-detail-card card col-lg-12">
+
+            <img class="card-img-top" *scImage="rendering.fields.heroImage" />
+            <strong *scText="rendering.fields.heading" class="h1" ></strong>
+
+            <div class="card-body bg-light">
+                <div id="content" class="post-content">
+                    <div class="stack stack-page-content" id="stack-135-0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="span12" *scRichText="rendering.fields.content">
+                                   
+                                </div>
+                                <sc-placeholder name="phContentBlock" [rendering]="rendering"></sc-placeholder>
+                            </div>
+                           
+                        </div>
+                        
+                    </div><!-- .stack-page-content -->
+                   
+                </div>
+               
+            </div>
+           
+        </div>
+    </div>
+</main>

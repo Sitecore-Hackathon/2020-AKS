@@ -1,0 +1,13 @@
+id: team5-2020
+displayName: Sitecore Lunatics
+template: Team-Template
+fields:
+  name: Sitecore Lunatics
+  teamPhoto: 
+    src: /data/media/img/tech.jpeg
+    alt: team   
+  location: USA
+  scheduledate: Feb 29, 2020
+  teamMembers: |
+        <p>Dylan Y</p><p>Tony M</p>
+        

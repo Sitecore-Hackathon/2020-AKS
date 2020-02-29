@@ -1,0 +1,124 @@
+# This is a route layout definition.
+# The route definition defines which Sitecore components are present on a route,
+# what their content data is, and which _placeholder_ they are placed in.
+
+# This particular route definition is for the home route - '/', so it defines the
+# components shown on the initial page of the app.
+
+# You may use equivalent JSON files instead of YAML if you prefer;
+# however YAML is simpler to read and allows comments like this one :)
+
+# Setting an ID is optional, but it will allow referring to this item in internal links
+# the ID can be a app-wide-unique string, or a GUID value.
+id: home-page
+
+# Route-level fields are appropriate for page level data like <title> contents
+# Define route level fields in /sitecore/definitions/routes.sitecore
+fields:
+  pageTitle: Welcome to Sitecore JSS
+# Define the page layout starting at the root placeholder - in this case, 'jss-main'
+# root placeholder names are defined in the package.json config section (required for Sitecore deployment)
+placeholders:
+  jss-main:
+  - componentName: HackathonHistory
+  - componentName: ContentBlock
+    fields:
+      heading: Welcome to the Sitecore Hackathon site.
+      heroImage: 
+        src: /data/media/img/Sitecore Hackthon.png
+        alt: Card image cap   
+      # to author content in YAML, use _multi-line values_ (prefixed with | + endline)
+      # as long as the same indent is preserved at the beginning of each line, no escaping
+      # is required at all in the value, making it easy to read
+      content: |
+                                    <div class="at-above-post-homepage addthis_tool"
+                                        data-url="http://www.sitecorehackathon.org/"></div>
+
+                                    <div class="stack-title">
+                                        <h3 class="card-title">Sitecore Hackathon 2020 – Feb 2020 – Current</h3>
+                                        <ul>
+                                            <li><a title="Sitecore Hackathon 2020"
+                                                    href="/hackathon-2020">Sitecore
+                                                    Hackathon 2020</a></li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>First Ever Sitecore Hackathon Contest – Jan 2014</strong></p>
+                                    <ul>
+                                        <li>11 Teams participated</li>
+                                        <li>Winner – Team Orange</li>
+                                    </ul>
+                                    <p><strong> Sitecore Hackathon 2015 – Jan 2015</strong></p>
+                                    <ul>
+                                        <li>36 Teams participated</li>
+                                        <li>Winner – Team Uniques in Best Development Experience Module</li>
+                                        <li>Winner – Team Bazinga! in Best Sitecore Integration Module</li>
+                                        <li>Winner – Team Admin/b in Best Business User Experience Module</li>
+                                        <li><a title="Sitecore Hackathon 2015 Winning Teams"
+                                                href="/hackathon-2016">Sitecore
+                                                Hackathon 2015 Winning Teams</a></li>
+                                    </ul>
+                                    <p><strong> Sitecore Hackathon 2016 – Jan 2016</strong></p>
+                                    <ul>
+                                        <li>48 Teams participated</li>
+                                        <li>Entries from over 15 countries</li>
+                                        <li>Winner – Team Uniques in Best Third Party Integration Module</li>
+                                        <li>Winner – Team Red Staffy in Best Habitat Feature Module</li>
+                                        <li><a title="Sitecore Hackathon 2016 Winning Teams"
+                                                href="/hackathon-2016">Sitecore
+                                                Hackathon 2016 Winning Teams</a></li>
+                                    </ul>
+                                    <p><strong>Sitecore Hackathon 2017 – Mar 2017</strong></p>
+                                    <ul>
+                                        <li>92 Teams participated</li>
+                                        <li>Entries from over 26 countries</li>
+                                        <li>
+                                            <p>Winner – Team SapeAztec in Azure PaaS
+                                                Module</p>
+                                        </li>
+                                        <li>Winner – Team No Weekend 4 us in Sitecore Experience Accelerator</li>
+                                        <li>Winner – Team O161 in Habitat Module</li>
+                                        <li>Winner – Team Go Horse in Data Exchange Framework</li>
+                                        <li><a title="Sitecore Hackathon 2017 Winning Teams"
+                                                href="/hackathon-2017">Sitecore
+                                                Hackathon 2017 Winning Teams</a></li>
+                                    </ul>
+                                    <p><strong>Sitecore Hackathon 2018 – Mar 2018</strong></p>
+                                    <ul>
+                                        <li>74 Teams participated</li>
+                                        <li>Entries from over 25 countries</li>
+                                        <li>Winner – Team Las Vegans in xConnect Module</li>
+                                        <li>Winner – Team Santa’s Little Helper in Sitecore Experience Accelerator</li>
+                                        <li>Winner – Team Mashed Potatoes in Commerce Module</li>
+                                        <li>Winner – Team Powerful Ways in JavaScript Services Module</li>
+                                        <li><a title="Sitecore Hackathon 2018 Winning Teams"
+                                                href="/hackathon-2018">Sitecore
+                                                Hackathon 2018 Winning Teams</a></li>
+                                    </ul>
+                                    <p><strong>Sitecore Hackathon 2019 – Mar 2019</strong></p>
+                                    <ul>
+                                        <li>97 Teams participated</li>
+                                        <li>Entries from over 25 countries</li>
+                                        <li><a href="https://photos.app.goo.gl/rZMfkWCQpKkmVJcs9"
+                                                target="_blank">Pictures from the 2019 Hackathon</a></li>
+                                        <li><a title="Sitecore Hackathon 2019 Winning Teams"
+                                                href="/hackathon-2019">Sitecore
+                                                Hackathon 2019 Winning Teams</a></li>
+                                    </ul>
+                                    <p>Participant Benefits<span class="spot">&nbsp;</span></p>
+                                    <ul>
+                                        <li>Name recognition</li>
+                                        <li>Meet new Sitecore developers</li>
+                                        <li>Sense of community and experience</li>
+                                        <li>Get a module ready for Sitecore Market</li>
+                                        <li>and lastly there are Prizes</li>
+                                    </ul>
+                                    <div class="stack-title"></div>
+                                    <p>If you have any questions, comments or suggestions, please feel free to get in
+                                        touch with me at @akshaysura13 or post using /#SCHackathon on Twitter.</p>
+                                    <p></p>
+                                    <div class="at-below-post-homepage addthis_tool"
+                                        data-url="http://www.sitecorehackathon.org/"></div>
+        
+          
+
+

@@ -1,0 +1,13 @@
+id: team2-2018
+displayName: Sitecore
+template: Team-Template
+fields:
+  name: Sitecore
+  teamPhoto: 
+    src: /data/media/img/tech.jpeg
+    alt: team   
+  location: India
+  scheduledate: Feb 28, 2018
+  teamMembers: |
+        <p>Nrapendra V</p>
+        
