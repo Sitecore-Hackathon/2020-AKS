@@ -1,38 +1,31 @@
 ![Hackathon Logo](documentation/images/hackathon.png?raw=true "Hackathon Logo")
 
-# Submission Boilerplate
+# Refresh current Sitecore Hackathon website using Sitecore JSS
 
-Welcome to Sitecore Hackathon 2020.
+## Module Purpose
 
-The Hackathon site can be found at http://www.sitecorehackathon.org/sitecore-hackathon-2020/
+To meet the objective of 2020 Hackathon for topic "Sitecore Hackathon Website"
 
-The purpose of this repository is to provide a sample which shows how to structure the Hackathon submissions.
+## Module Sitecore Hackathon Category
+Sitecore Hackathon Website in JSS
 
+## How to setup the Sitecore JSS application:
 
-## Entry Submission Requirements 
+-	Setup your JSS App with name “AKS” from files available at https://github.com/Sitecore-Hackathon/2020-AKS/tree/master/src
+-	Install node modules using command npm install -g @sitecore-jss/sitecore-jss-cli
+-	Start the app using command – jss start
 
-All teams are required to submit the following as part of their entry submission on or before the end of the Hackathon on **Saturday  February 29th 2020 at 8PM EST**. The modules should be based on [Sitecore 9.3 (Initial Release)](https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform/93/Sitecore_Experience_Platform_93_Initial_Release.aspx).
+## Why JSS
 
-**Failure to meet any of the requirements will result in automatic disqualification.** Please reach out to any of the organisers or judges if you require any clarification.
+-	To enable front end developers to work in disconnected mode without having Sitecore instance in their machine. This reduce the license dependency for Sitecore development.
+-	To enable behavior and content to be consumed from Sitecore and functionality to come from other front-end technologies.
+-	Headless will make development of applications possible with Sitecore which means the information architecture and presentation architecture is decoupled.
+-	Apps can be built entirely disconnected from Sitecore - then deployed to Sitecore later (Sitecore install not required)
 
-- Sitecore 9.3 (Initial Release) Module (Module install package)
-   - An installation Sitecore Package (`.zip` or `.update`)
+## Youtube Video
 
-- Module code in a public Git source repository. We will be judging (amongst other things):
-  - Cleanliness of code
-  - Commenting where necessary
-  - Code Structure
-  - Standard coding standards & naming conventions
+Click here for related video of this app [Sitecore Hackathon website in JSS](https://youtu.be/8m8pZeHxPFs)
 
-- Precise and Clear Installation Instructions document (1 – 2 pages)
-- Module usage documentation on [Readme.md](documentation) file on the Git Repository (2 – 5 pages)
-  - Module Purpose
-  - Module Sitecore Hackathon Category
-  - How does the end user use the Module?
-  - Screenshots, etc.
+## Screenshots
+![Homepage](documentation/images/Hackathon Home.bmp)
 
-- Create a 2 – 10 minutes video explaining the module’s functionality (A link to youtube video)
-
-  - What problem was solved
-  - How did you solve it
-  - What is the end results
