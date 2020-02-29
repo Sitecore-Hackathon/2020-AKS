@@ -27,5 +27,5 @@ Sitecore Hackathon Website in JSS
 Click here for related video of this app [Sitecore Hackathon website in JSS](https://youtu.be/8m8pZeHxPFs)
 
 ## Screenshots
-![Homepage](documentation/images/Hackathon Home.bmp)
+![Homepage](documentation/images/Hackathon Home.bmp?raw=true "Homepage")
 
